@@ -1,0 +1,47 @@
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\vocab.txt --bert_config_file=model_iter2\bert_config.json --init_checkpoint=model_iter2\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=output_iter2\result_dir1\
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\cancerbert\vocab.txt --bert_config_file=model_iter2\cancerbert\bert_config.json --init_checkpoint=model_iter2\cancerbert\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\result_dir_cancerbert3\
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\blue_bert\vocab.txt --bert_config_file=model_iter2\blue_bert\bert_config.json --init_checkpoint=model_iter2\blue_bert\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\result_dir_bluebert4\
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=othermodels\biobert_pretrain_output_disch_100000\vocab.txt --bert_config_file=othermodels\biobert_pretrain_output_disch_100000\bert_config.json --init_checkpoint=othermodels\biobert_pretrain_output_disch_100000\model.ckpt-100000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\result_dir_biobert_pretrain_output_disc_1\
+
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=othermodels\biobert_v1_pubmed_pmc\vocab.txt --bert_config_file=othermodels\biobert_v1_pubmed_pmc\bert_config.json --init_checkpoint=othermodels\biobert_v1_pubmed_pmc\biobert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\result_dir_biobert_v1_pubmed_pmc_1\
+
+
+python BERT_NER_lstm.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=othermodels\biobert_v1_pubmed_pmc\vocab.txt --bert_config_file=othermodels\biobert_v1_pubmed_pmc\bert_config.json --init_checkpoint=othermodels\biobert_v1_pubmed_pmc\biobert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=4.0 --output_dir=output_iter2\result_dir_biobert_v1_pubmed_pmc_4\
+
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=othermodels\cancerbert_400k\vocab.txt --bert_config_file=othermodels\cancerbert_400k\bert_config.json --init_checkpoint=othermodels\cancerbert_400k\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\cancer_400k_1\
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=othermodels\cancerbert_400k\vocab.txt --bert_config_file=othermodels\cancerbert_400k\bert_config.json --init_checkpoint=othermodels\cancerbert_400k\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\cancer_400k_1\
+
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=othermodels\cancerbert_originvocab_500k\vocab.txt --bert_config_file=othermodels\cancerbert_originvocab_500k\bert_config.json --init_checkpoint=othermodels\cancerbert_originvocab_500k\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\cancer_ori_vocab_500k_1\
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=othermodels\cancerbert_originalvocab_550k\vocab.txt --bert_config_file=othermodels\cancerbert_originalvocab_550k\bert_config.json --init_checkpoint=othermodels\cancerbert_originalvocab_550k\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\cancerbert_originalvocab_550k2\
+
+###test bert origin
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\bert_origin\vocab.txt --bert_config_file=model_iter2\bert_origin\bert_config.json --init_checkpoint=model_iter2\bert_origin\bert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\result_dir_bert_origin1\
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\bert_origin\vocab.txt --bert_config_file=model_iter2\bert_origin\bert_config.json --init_checkpoint=model_iter2\bert_origin\bert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=2.0 --output_dir=output_iter2\result_dir_bert_origin5\
+
+### new vocab cancer bert
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\cancerbert_iter2\vocab.txt --bert_config_file=model_iter2\cancerbert_iter2\bert_config.json --init_checkpoint=model_iter2\cancerbert_iter2\bert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=output_iter2\result_dir_cancerbertiter2_1\
+
+
+
+### new vocab cancer bert based on origin BERT
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\cancerbert_based_on_origin\vocab.txt --bert_config_file=model_iter2\cancerbert_based_on_origin\bert_config.json --init_checkpoint=model_iter2\cancerbert_based_on_origin\bert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=output_iter2\result_dir_cancerbert_origin_1\
+
+
+### new vocab cancer bert based on origin BERT
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=False --do_eval=False --do_predict=True --data_dir=data_iter2\inference_data --vocab_file=model_iter2\cancerbert_iter2\vocab.txt --bert_config_file=model_iter2\cancerbert_iter2\bert_config.json --init_checkpoint=inference_models\bert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=inference_models\output_cancerbert_iter2\
+
+
+### new vocab cancer bert
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2\inference_data\note1 --vocab_file=model_iter2\cancerbert_iter2\vocab.txt --bert_config_file=model_iter2\cancerbert_iter2\bert_config.json --init_checkpoint=model_iter2\cancerbert_iter2\bert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=inference_models\output_cancer_iter2_notes1\
+
+### 997 new vocab cancer bert
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\997cust_vocab_50wsteps\vocab.txt --bert_config_file=model_iter2\997cust_vocab_50wsteps\bert_config.json --init_checkpoint=model_iter2\997cust_vocab_50wsteps\bert_model.ckpt --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=output_iter2\result_dir_cancerbert997_11\

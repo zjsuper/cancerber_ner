@@ -1,0 +1,19 @@
+
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data --vocab_file=bert_finetuned\vocab.txt --bert_config_file=bert_finetuned\bert_config.json --init_checkpoint=bert_finetuned\model.ckpt-596 --max_seq_length=128 --train_batch_size=32 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output\result_dir4\
+
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data --vocab_file=model\vocab.txt --bert_config_file=model\bert_config.json --init_checkpoint=model\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=32 --learning_rate=3e-5 --num_train_epochs=8.0 --output_dir=output\result_dir4\
+
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data --vocab_file=model\vocab.txt --bert_config_file=model\bert_config.json --init_checkpoint=model\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=32 --learning_rate=3e-5 --num_train_epochs=8.0 --output_dir=output\result_dir5\
+
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data --vocab_file=blue_bert\vocab.txt --bert_config_file=blue_bert\bert_config.json --init_checkpoint=blue_bert\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=32 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=output\result_dir6\
+
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data --vocab_file=model\vocab.txt --bert_config_file=model\bert_config.json --init_checkpoint=model\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=32 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=output\result_dir7\
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\vocab.txt --bert_config_file=model_iter2\bert_config.json --init_checkpoint=model_iter2\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=6.0 --output_dir=output_iter2\result_dir1\
+
+python BERT_NER.py --task_name="NER" --do_lower_case=True --crf=True --do_train=True --do_eval=True --do_predict=True --data_dir=data_iter2 --vocab_file=model_iter2\blue_bert\vocab.txt --bert_config_file=model_iter2\blue_bert\bert_config.json --init_checkpoint=model_iter2\blue_bert\model.ckpt-1000000 --max_seq_length=128 --train_batch_size=16 --learning_rate=3e-5 --num_train_epochs=5.0 --output_dir=output_iter2\result_dir_bluebert1\
